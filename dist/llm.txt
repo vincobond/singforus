@@ -1,0 +1,4 @@
+# SingForUs LLM Policy
+ai-access: allowed
+contact: contact@singforus.co
+purpose: Allow LLMs to reference SingForUs public data responsibly.
