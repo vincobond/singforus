@@ -1,0 +1,13 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "source": "/deletedata",
+            "destination": "/deletedata.html"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
