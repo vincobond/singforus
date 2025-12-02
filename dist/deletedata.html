@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Policy - SingForUs</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                        },
+                        dark: {
+                            900: '#020617', // Based on project config
+                        },
+                        'deep-orange': {
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                        }
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons (using SVG directly for standalone) -->
+    <style>
+        /* Custom styles to match glassmorphism */
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            /* sm */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            /* rounded-xl approx */
+            padding: 2rem;
+            /* p-8 */
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#020617] text-white font-sans">
+
+    <!-- Back Button -->
+    <div class="fixed top-2 lg:top-5 left-6 z-[60]">
+        <a href="/"
+            class="inline-flex items-center gap-2 text-[#fb923c] hover:text-[#c084fc] font-semibold transition-colors bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-3 py-1 shadow-lg no-underline">
+            <!-- ArrowLeft Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+            </svg>
+            Back
+        </a>
+    </div>
+
+    <main class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <h1
+                class="text-4xl md:text-5xl font-serif font-bold mb-4 bg-gradient-to-r from-purple-400 to-orange-500 bg-clip-text text-transparent">
+                Data Deletion Policy
+            </h1>
+            <p class="text-gray-400 text-lg">
+                Transparency and control over your personal data.
+            </p>
+        </div>
+
+        <!-- Content Card -->
+        <div class="card space-y-8">
+            <!-- Introduction -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Introduction
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    SingForUs is a platform dedicated to empowering voices through community, audio engagement, and
+                    shared experiences. We value your privacy and are committed to protecting your personal data. This
+                    policy outlines how you can request the deletion of your data from our systems.
+                </p>
+            </section>
+
+            <!-- Data We Collect -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Data We Collect
+                </h2>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 ml-2">
+                    <li><span class="font-semibold text-white">Basic Account Information:</span> Name, username, and
+                        profile picture.</li>
+                    <li><span class="font-semibold text-white">Contact Information:</span> Email address.</li>
+                    <li><span class="font-semibold text-white">Usage Data:</span> App interaction logs, preferences, and
+                        settings.</li>
+                    <li><span class="font-semibold text-white">User Content:</span> Audio recordings, comments, and
+                        other media uploads.</li>
+                </ul>
+            </section>
+
+            <!-- Why We Collect Data -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Why We Collect This Data
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    We collect this data to provide, maintain, and improve the SingForUs experience. It allows us to
+                    personalize your profile, facilitate community interactions, and ensure the security of our
+                    platform.
+                </p>
+            </section>
+
+            <!-- How to Request Deletion -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    How to Request Data Deletion
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    If you wish to delete your account and all associated data, you can do so by contacting our support
+                    team. Please send an email with the subject line <span
+                        class="text-white font-mono bg-white/10 px-2 py-0.5 rounded">"Data Deletion Request"</span> to:
+                </p>
+                <div class="bg-white/5 p-4 rounded-lg border border-white/10 text-center sm:text-left">
+                    <a href="mailto:support@singforus.co"
+                        class="text-orange-400 hover:text-orange-300 font-semibold text-lg transition-colors">
+                        support@singforus.co
+                    </a>
+                </div>
+                <p class="text-gray-400 text-sm mt-3">
+                    *Please send the request from the email address associated with your SingForUs account so we can
+                    verify your identity.
+                </p>
+            </section>
+
+            <!-- Steps We Take -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Our Deletion Process
+                </h2>
+                <ol class="list-decimal list-inside text-gray-300 space-y-2 ml-2">
+                    <li>We verify your identity to ensure the request is legitimate.</li>
+                    <li>We initiate the deletion process for your account and associated personal data from our active
+                        databases.</li>
+                    <li>We remove your public content (e.g., comments, posts) from the platform.</li>
+                    <li>We send you a final confirmation email once the process is complete.</li>
+                </ol>
+            </section>
+
+            <!-- Timeline -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Deletion Timeline
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Once your request is verified, the data deletion process is typically completed within <span
+                        class="text-white font-semibold">7 to 30 days</span>. Please note that some data may be retained
+                    in our backups for a limited period as required by law or for disaster recovery purposes, after
+                    which it will be permanently deleted.
+                </p>
+            </section>
+
+            <!-- Confirmation -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Permanent Deletion
+                </h2>
+                <div class="bg-red-500/10 border border-red-500/30 p-4 rounded-lg">
+                    <p class="text-red-200 leading-relaxed">
+                        <strong>Warning:</strong> Data deletion is permanent and cannot be undone. Once your account is
+                        deleted, you will lose access to your profile, history, and any content you have created on
+                        SingForUs.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Compliance -->
+            <section>
+                <h2 class="text-2xl font-serif font-semibold text-purple-300 mb-3">
+                    Compliance & Privacy
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    This policy is designed to comply with global data privacy regulations, including GDPR and Google
+                    Play Store data safety requirements. We are committed to ensuring your rights to data privacy and
+                    control are respected.
+                </p>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
