@@ -11,19 +11,19 @@
     },
     {
       "source": "/termscondition",
-      "destination": "/terms.html"
+      "destination": "/termscondition.html"
     },
     {
       "source": "/terms",
-      "destination": "/terms.html"
+      "destination": "/termscondition.html"
     },
     {
       "source": "/cookiespolicy",
-      "destination": "/cookies.html"
+      "destination": "/cookiespolicy.html"
     },
     {
       "source": "/cookies",
-      "destination": "/cookies.html"
+      "destination": "/cookiespolicy.html"
     },
     {
       "source": "/deletedata",
