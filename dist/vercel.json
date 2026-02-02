@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/privacy-policy",
+      "source": "/privacypolicy",
       "destination": "/privacypolicy.html"
     },
     {
@@ -10,7 +10,7 @@
       "destination": "/privacypolicy.html"
     },
     {
-      "source": "/terms-condition",
+      "source": "/termscondition",
       "destination": "/terms.html"
     },
     {
@@ -18,7 +18,7 @@
       "destination": "/terms.html"
     },
     {
-      "source": "/cookies-policy",
+      "source": "/cookiespolicy",
       "destination": "/cookies.html"
     },
     {

@@ -81,29 +81,43 @@
             color: #fb923c;
             font-weight: 600;
         }
+
+        .subsection-title {
+            color: #fb923c;
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .divider {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 2rem 0;
+        }
     </style>
+<base target="_blank">
 </head>
 
-<body class="min-h-screen bg-[#020617] text-white font-sans">
+<body class="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white font-sans">
 
     <!-- Back Button -->
     <div class="fixed top-2 lg:top-5 left-6 z-[60]">
-        <a href="/"
-            class="inline-flex items-center gap-2 text-[#fb923c] hover:text-[#c084fc] font-semibold transition-colors bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-3 py-1 shadow-lg no-underline">
+        <button onclick="window.history.back()"
+            class="inline-flex items-center gap-2 text-[#fb923c] hover:text-[#c084fc] font-semibold transition-colors bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-full px-3 py-1 shadow-lg no-underline cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
                 <path d="m12 19-7-7 7-7" />
                 <path d="M19 12H5" />
             </svg>
             Back
-        </a>
+        </button>
     </div>
 
     <main class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <!-- Header Section -->
         <div class="text-center mb-12">
             <h1
-                class="text-4xl md:text-5xl font-serif font-bold mb-4 bg-gradient-to-r from-purple-400 to-orange-500 bg-clip-text text-transparent">
+                class="text-4xl md:text-5xl font-serif font-bold mb-4 bg-gradient-to-r from-purple-400 to-orange-500 bg-clip-text text-transparent leading-tight">
                 Cookies Policy – Singforus Ltd
             </h1>
             <p class="text-gray-400 text-lg">
@@ -111,52 +125,158 @@
             </p>
         </div>
 
-        <!-- Content Card -->
-        <div class="card space-y-10">
+        <!-- Content Container -->
+        <div class="space-y-8">
+            
             <!-- 1. What Are Cookies -->
-            <section>
-                <h2 class="section-title">1. What Are Cookies?</h2>
-                <p class="content-text">
-                    Cookies are small text files placed on your device to make websites work efficiently and provide reporting information. They can be session-based or persistent.
-                </p>
-            </section>
+            <div class="card">
+                <section>
+                    <h2 class="section-title">1. What Are Cookies?</h2>
+                    <p class="content-text">
+                        Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide reporting information to the site owners.
+                    </p>
+                    <p class="content-text" style="margin-bottom: 0;">
+                        Cookies can be "session cookies" (which are temporary and deleted when you close your browser) or "persistent cookies" (which remain on your device for a set period or until you delete them).
+                    </p>
+                </section>
+            </div>
 
             <!-- 2. How We Use Cookies -->
-            <section>
-                <h2 class="section-title">2. How We Use Cookies</h2>
-                <ul class="list-disc list-inside content-text space-y-2 ml-2">
-                    <li><span class="accent-text">Operation:</span> Enabling login and profile access.</li>
-                    <li><span class="accent-text">Experience:</span> Remembering language and history settings.</li>
-                    <li><span class="accent-text">Analytics:</span> Understanding feature popularity and performance.</li>
-                    <li><span class="accent-text">Marketing:</span> Delivering relevant content and ads.</li>
-                </ul>
-            </section>
+            <div class="card">
+                <section>
+                    <h2 class="section-title">2. How We Use Cookies</h2>
+                    <p class="content-text">
+                        We use cookies and similar technologies for several reasons, including:
+                    </p>
+                    
+                    <div class="space-y-4 ml-2">
+                        <div>
+                            <h3 class="subsection-title">i. To Operate Our Service:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                To enable key functionalities, such as allowing you to login to your account and access your profile.
+                            </p>
+                        </div>
 
-            <!-- 3. Types of Cookies -->
-            <section>
-                <h2 class="section-title">3. Types of Cookies We Use</h2>
-                <p class="content-text">
-                    We use strictly necessary, performance/analytics, functionality, targeting/advertising, and social media cookies, including some provided by third parties like Google Analytics.
-                </p>
-            </section>
+                        <div>
+                            <h3 class="subsection-title">ii. To Enhance Your Experience:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                To remember your preferences, like language settings and song history, so you don't have to re-enter them each time you visit.
+                            </p>
+                        </div>
 
-            <!-- 4. Your Choices -->
-            <section>
-                <h2 class="section-title">4. Your Cookie Choices</h2>
-                <p class="content-text">
-                    You can manage cookies through your browser settings or our consent tool. Disabling cookies may impact some Service functionalities.
-                </p>
-            </section>
+                        <div>
+                            <h3 class="subsection-title">iii. To Analyze Usage:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                To understand how you interact with our Service, including which features are most popular and which parts of the Service may need improvement.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">iv. For Marketing and Advertising:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                To show you relevant content and advertisements both on and off our Service.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 3. Types of Cookies We Use -->
+            <div class="card">
+                <section>
+                    <h2 class="section-title">3. Types of Cookies We Use</h2>
+                    <p class="content-text">
+                        We use both first-party cookies (set by us) and third-party cookies (set by other companies). The specific types of cookies we use may include:
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="subsection-title">i. Strictly Necessary Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                These cookies are essential for the operation of our Service. They enable core functions like security, account management, and network management. Without these cookies, the Service would not be able to function properly. For example, a cookie might remember your login session so you don't have to log in repeatedly as you navigate the site.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">ii. Performance and Analytics Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                These cookies collect information about how you use our Service, such as the pages you visit most often, the duration of your visits, and any errors you encounter. This information helps us to improve the performance of the Service and to understand what features our users find most valuable. These cookies do not collect information that identifies you personally; all information is aggregated and anonymous.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">iii. Functionality Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                These cookies allow our Service to remember choices you make (such as your username, language, or region) and provide enhanced, more personalized features. They can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">iv. Targeting and Advertising Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                These cookies are used to deliver advertisements that are more relevant to you and your interests. They may be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. They are usually placed by third-party advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations, such as advertisers.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">v. Social Media Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                These cookies are set by social media services that we have added to the Service to enable you to share our content with your friends and networks. These cookies are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">vi. Third-Party Cookies:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                In addition to our own cookies, we may use various third-party cookies to report usage statistics of the Service, deliver advertisements, and so on. For example, we use Google Analytics to help us understand how visitors interact with our Service. Google Analytics uses cookies to collect information and report website usage statistics without personally identifying individual visitors to Google.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 4. Your Cookie Choices -->
+            <div class="card">
+                <section>
+                    <h2 class="section-title">4. Your Cookie Choices</h2>
+                    <p class="content-text">
+                        You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="subsection-title">i. Browser Settings:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. The "help" or "settings" function on most browsers will tell you how to prevent your browser from accepting new cookies, how to have the browser notify you when you receive new cookies, or how to disable cookies altogether. Please note that if you disable or refuse cookies, some parts of our Service may become inaccessible or not function properly.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="subsection-title">ii. Cookies Consent Tool:</h3>
+                            <p class="content-text" style="margin-bottom: 0;">
+                                When you first visit our website, you will be presented with a cookies consent banner that gives you the option to manage your preferences.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <!-- Footer -->
-        <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center space-y-2">
             <p class="text-gray-500 text-sm italic">
-                © 2025 Singforus Ltd. All rights reserved.
+                © <span id="year">2025</span> Singforus Ltd. All rights reserved.
+            </p>
+            <p class="text-gray-500 text-sm italic">
+                Empowering global singers and music lovers to connect through creativity 🎵
             </p>
         </div>
     </main>
 
+    <!-- Dynamic Year Script -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
