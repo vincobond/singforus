@@ -21,8 +21,7 @@
   <!-- Social Meta -->
   <meta property="og:title" content="SingForUs | Connect, Sing & Showcase Your Talent Online">
   <meta property="og:description" content="Join SingForUs — where singers perform, connect, and grow together.">
-  <meta property="og:image"
-    content="https://ik.imagekit.io/h3qzmviwv/Singforus/Screenshot%202025-10-12%20143705.png?updatedAt=1760281357554">
+  <meta property="og:image" content="https://ik.imagekit.io/h3qzmviwv/Singforus/New%20Project%20(10).png">
   <meta property="og:url" content="https://singforus.co">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -36,8 +35,159 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <!-- Link loader styles -->
-  
+
+  <style>
+    /* ── Instant dark background — eliminates white flash ── */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #020617;
+      color: #fff;
+    }
+
+    /* ── Pre-React loader overlay ── */
+    #html-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #020617;
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(139, 92, 246, 0.18) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.12) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(249, 115, 22, 0.10) 1px, transparent 0);
+      background-size: 20px 20px, 30px 30px, 25px 25px;
+      background-position: 0 0, 10px 10px, 15px 5px;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    #html-loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Ring + logo */
+    .hl-ring-wrap {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    .hl-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 4px solid transparent;
+      border-top-color: #f97316;
+      border-right-color: #c026d3;
+      animation: hl-spin 1.4s linear infinite;
+      filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6));
+    }
+
+    .hl-ring-track {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.06);
+    }
+
+    @keyframes hl-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .hl-logo {
+      width: 48px;
+      height: 48px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      animation: hl-pulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes hl-pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.06);
+      }
+    }
+
+    /* Brand name */
+    .hl-brand {
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #f97316, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 6px;
+    }
+
+    .hl-tagline {
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.35);
+      animation: hl-blink 1.6s ease-in-out infinite;
+    }
+
+    @keyframes hl-blink {
+
+      0%,
+      100% {
+        opacity: 0.35;
+      }
+
+      50% {
+        opacity: 0.9;
+      }
+    }
+
+    /* Bottom progress bar */
+    .hl-bar-track {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hl-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #f97316, #a855f7);
+      box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+      animation: hl-bar 2s ease-out forwards;
+    }
+
+    @keyframes hl-bar {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+
 
 
   <script type="application/ld+json">
@@ -58,21 +208,26 @@
     }
   </script>
 
-  <script type="module" crossorigin src="/assets/index-869159dd.js"></script>
-  <link rel="stylesheet" href="/assets/index-3c75fb0d.css">
+  <script type="module" crossorigin src="/assets/index-f12042bc.js"></script>
+  <link rel="stylesheet" href="/assets/index-182d04ce.css">
 </head>
 
 <body>
-  <!-- Page loader overlay -->
-
-  <div id="page-loader">
-    <div class="loader-content">
-      <img src="https://ik.imagekit.io/h3qzmviwv/Singforus/Logo%203d%204.png?updatedAt=1760841205285"
-        alt="SingForUs Logo" class="loader-logo" />
-      <div class="loader-ring"></div>
-      <div class="loader-text">Loading Experience</div>
+  <!-- Instant pre-React loader (hides white flash) -->
+  <div id="html-loader">
+    <div class="hl-ring-wrap">
+      <div class="hl-ring-track"></div>
+      <div class="hl-ring"></div>
+      <img src="https://ik.imagekit.io/h3qzmviwv/Singforus/Frame%201321315571.png?updatedAt=1760841202797"
+        alt="Singforus" class="hl-logo" />
+    </div>
+    <div class="hl-brand">Singforus</div>
+    <div class="hl-tagline">Voice &bull; Community &bull; Growth</div>
+    <div class="hl-bar-track">
+      <div class="hl-bar-fill"></div>
     </div>
   </div>
+
 
 
 
@@ -91,21 +246,3 @@
 </body>
 
 </html>
-
-<script>
-  // Wait until the full page is loaded
-  window.addEventListener('load', () => {
-    const loader = document.getElementById('page-loader');
-    if (loader) {
-      // Fade out the loader smoothly
-      loader.style.transition = 'opacity 0.5s ease';
-      loader.style.opacity = '0';
-
-      // After fade-out, remove the loader and allow scrolling
-      setTimeout(() => {
-        loader.style.display = 'none';
-        document.body.style.overflow = 'auto'; // enable scrolling again
-      }, 500);
-    }
-  });
-</script>
